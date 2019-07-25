@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buy In Campus</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="./css/main.css" >
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <!-- plugins -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css" />
+  </head>
+  <body onload="loader()">
+   
+   <!-- Preloader -->
+    <!-- <div id="loading"></div> -->
+
+    
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <div class="elmnts">
+        <ul id="navlist">
+          <li>
+            <span class="undln"><a href="index.html">home</a></span>
+          </li>
+         <div class="dropdown">
+          <li class="trigger">
+            <span class="undln">Category</span>
+          </li>
+          <div class="content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                exercitationem, veniam necessitatibus perferendis, odio consectetur
+                odit aperiam alias explicabo ipsam beatae!
+              </p>
+        </div>
+         </div>
+        <div class="dropdown">
+            <li class="trigger">
+              <span class="undln">Listing</span>
+            </li>
+            <div class="content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                  quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                  exercitationem, veniam necessitatibus perferendis, odio consectetur
+                  odit aperiam alias explicabo ipsam beatae!
+                </p>
+          </div>
+          </div>
+
+          <div class="dropdown">
+              <li class="trigger leftmost">
+                <span class="undln">about us</span>
+              </li>
+              <div class="content">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                    quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                    exercitationem, veniam necessitatibus perferendis, odio consectetur
+                    odit aperiam alias explicabo ipsam beatae!
+                  </p>
+            </div>
+            </div>
+
+      
+            <!-- <li>
+              <span class="cart"><i class="fal fa-shopping-cart"></i></span>
+              </li> -->
+          
+              <li class="right btn-li">
+                <button  class="btn btn-primary btn-login"><a href="login.html">SIGN IN / SIGN UP</a></button>
+              </li>
+          <li class="btn-li">
+            <button class="btn btn-success btn-add"><i class="far fa-camera-alt"></i>  &nbsp &nbspADD +</button>
+          </li>
+          <div class="dropdown">
+          <li class="trigger">
+        <span class="undln">
+          <img class="flag" src="data:image/png;base64,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"/></span>
+          </li>
+          <div class="content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                exercitationem, veniam necessitatibus perferendis, odio consectetur
+                odit aperiam alias explicabo ipsam beatae!
+              </p>
+        </div>
+        </div>
+         
+        </ul>
+
+        <!-- <div class="logo">
+                    <img class="logoimg" src="./img/logo-black.ico">
+                </div> -->
+      </div>
+    </nav>
+    <!-- NAVBAR -->
+
+
+      <!--==================================
+  =            User Profile            =
+  ===================================-->
+  <section class="dashboard section">
+    <!-- Container Start -->
+    <div class="container">
+      <!-- Row Start -->
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0">
+          <div class="sidebar">
+            <!-- User Widget -->
+            <div class="widget user-dashboard-profile">
+              <!-- User Image -->
+              <div class="profile-thumb">
+                <img src="./img/rahul-sir.png" alt="" class="rounded-circle">
+              </div>
+              <!-- User Name -->
+              <h5 class="text-center">Rahul Singh</h5>
+              <p>Joined February 06, 2019</p>
+              <a href="user-profile.html" class="btn btn-main-sm">Edit Profile</a>
+            </div>
+            <!-- Dashboard Links -->
+            <div class="widget user-dashboard-menu">
+              <ul>
+                <li>
+                  <a href="user-dashboard.html"><i class="fa fa-user"></i> My Ads</a></li>
+                <li  class="active">
+                  <a href="user-dashboard.html"><i class="fal fa-bookmark"></i> Favourite Ads <span>5</span></a>
+                </li>
+                
+                <li>
+                  <a href="user-dashboard.html"><i class="fa fa-cog"></i> Logout</a>
+                </li>
+                <li>
+                  <a href="user-dashboard.html"><i class="fa fa-power-off"></i>Delete Account</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-0">
+          <!-- Recently Favorited -->
+          <div class="widget dashboard-container my-adslist">
+            <h3 class="widget-header">Favourite Ads</h3> 
+            <table class="table table-responsive product-dashboard-table">
+              <thead>
+                <tr class="tr">
+                  <th>Image</th>
+                  <th>Product Title</th>
+                  <th class="text-center">Category</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td class="product-thumb">
+                    <img width="80px" height="auto" src="./img/p-1.jpg" alt="image description"></td>
+                  <td class="product-details">
+                    <h3 class="title">Macbook Pro 15inch</h3>
+                    <span class="add-id"><strong>Ad ID:</strong> ng3D5hAMHPajQrM</span>
+                    <span><strong>Posted on: </strong><time>Jun 27, 2019</time> </span>
+                    <span class="status active"><strong>Status</strong>Active</span>
+                    <span class="location"><strong>Location</strong>Noida,India</span>
+                  </td>
+                  <td class="product-category"><span class="categories">Laptops</span></td>
+                  <td class="action" data-title="Action">
+                    <div class="">
+                      <ul class="list-inline justify-content-center">
+                        <li class="list-inline-item">
+                          <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="view" href="">
+                            <i class="fa fa-eye"></i>
+                          </a>		
+                        </li>
+                        
+                        <li class="list-inline-item">
+                          <a class="delete" href="">
+                            <i class="fa fa-trash"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  
+                  <td class="product-thumb">
+                    <img width="80px" height="auto" src="./img/p-2.jpg" alt="image description"></td>
+                  <td class="product-details">
+                    <h3 class="title">Study Table Combo</h3>
+                    <span class="add-id"><strong>Ad ID:</strong> ng3D5hAMHPajQrM</span>
+                    <span><strong>Posted on: </strong><time>Feb 12, 2019</time> </span>
+                    <span class="status active"><strong>Status</strong>Active</span>
+                    <span class="location"><strong>Location</strong>USA</span>
+                  </td>
+                  <td class="product-category"><span class="categories">Laptops</span></td>
+                  <td class="action" data-title="Action">
+                    <div class="">
+                      <ul class="list-inline justify-content-center">
+                        <li class="list-inline-item">
+                          <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="view" href="">
+                            <i class="fa fa-eye"></i>
+                          </a>		
+                        </li>
+                        
+                        <li class="list-inline-item">
+                          <a class="delete" href="">
+                            <i class="fa fa-trash"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  
+                  <td class="product-thumb">
+                    <img width="80px" height="auto" src="./img/p-3.jpg" alt="image description"></td>
+                  <td class="product-details">
+                    <h3 class="title">Macbook Pro 15inch</h3>
+                    <span class="add-id"><strong>Ad ID:</strong> ng3D5hAMHPajQrM</span>
+                    <span><strong>Posted on: </strong><time>Jun 27, 2019</time> </span>
+                    <span class="status active"><strong>Status</strong>Active</span>
+                    <span class="location"><strong>Location</strong>Noida,India</span>
+                  </td>
+                  <td class="product-category"><span class="categories">Laptops</span></td>
+                  <td class="action" data-title="Action">
+                    <div class="">
+                      <ul class="list-inline justify-content-center">
+                        <li class="list-inline-item">
+                          <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="view" href="">
+                            <i class="fa fa-eye"></i>
+                          </a>		
+                        </li>
+                        
+                        <li class="list-inline-item">
+                          <a class="delete" href="">
+                            <i class="fa fa-trash"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  
+                  <td class="product-thumb">
+                    <img width="80px" height="auto" src="./img/p-1.jpg" alt="image description"></td>
+                  <td class="product-details">
+                    <h3 class="title">Macbook Pro 15inch</h3>
+                    <span class="add-id"><strong>Ad ID:</strong> ng3D5hAMHPajQrM</span>
+                    <span><strong>Posted on: </strong><time>Jun 27, 2019</time> </span>
+                    <span class="status active"><strong>Status</strong>Active</span>
+                    <span class="location"><strong>Location</strong>Noida,India</span>
+                  </td>
+                  <td class="product-category"><span class="categories">Laptops</span></td>
+                  <td class="action" data-title="Action">
+                    <div class="">
+                      <ul class="list-inline justify-content-center">
+                        <li class="list-inline-item">
+                          <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="view" href="">
+                            <i class="fa fa-eye"></i>
+                          </a>		
+                        </li>
+                      
+                        <li class="list-inline-item">
+                          <a class="delete" href="">
+                            <i class="fa fa-trash"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  
+                  <td class="product-thumb">
+                    <img width="80px" height="auto" src="./img/p-2.jpg" alt="image description"></td>
+                  <td class="product-details">
+                    <h3 class="title">Macbook Pro 15inch</h3>
+                    <span class="add-id"><strong>Ad ID:</strong> ng3D5hAMHPajQrM</span>
+                    <span><strong>Posted on: </strong><time>Jun 27, 2017</time> </span>
+                    <span class="status active"><strong>Status</strong>Active</span>
+                    <span class="location"><strong>Location</strong>Noida,India</span>
+                  </td>
+                  <td class="product-category"><span class="categories">Laptops</span></td>
+                  <td class="action" data-title="Action">
+                    <div class="">
+                      <ul class="list-inline justify-content-center">
+                        <li class="list-inline-item">
+                          <a data-toggle="tooltip" data-placement="top" title="Tooltip on top" class="view" href="">
+                            <i class="fa fa-eye"></i>
+                          </a>		
+                        </li>
+                        
+                        <li class="list-inline-item">
+                          <a class="delete" href="">
+                            <i class="fa fa-trash"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Row End -->
+    </div>
+    <!-- Container End -->
+  </section>
+ 
+ 
+ <!--    Footer           -->
+
+ <footer class="footer section section-sm">
+    <!-- Container Start -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-7 offset-md-1 offset-lg-0">
+          <!-- About -->
+          <div class="block about">
+            <!-- footer logo -->
+            <img class="footer-logo" src="./img/bright-logo-final.png" alt="">
+            <!-- description -->
+            <p class="alt-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-2 offset-lg-1 col-md-3">
+          <div class="block">
+            <h4>Site Pages</h4>
+            <ul>
+              <li><a href="#">JSSATEN</a></li>
+              <li><a href="#">How It works</a></li>
+              <li><a href="#">Deals & Coupons</a></li>
+              <li><a href="#">Articls & Tips</a></li>
+              <li><a href="#">Terms of Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Link list -->
+        <div class="col-lg-2 col-md-3 offset-md-1 offset-lg-0">
+          <div class="block">
+            <h4>Learn More</h4>
+            <ul>
+              <li><a href="#">JSSATEN</a></li>
+              <li><a href="#">How It works</a></li>
+              <li><a href="#">Deals & Coupons</a></li>
+              <li><a href="#">Articls & Tips</a></li>
+              <li><a href="#">Terms of Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Promotion -->
+        <div class="col-lg-4 col-md-7">
+          <!-- App promotion -->
+          <div class="block-2 app-promotion">
+            <a href="">
+              <!-- Icon -->
+              <img class="footer-mobile" src="./img/phone-icon.png" alt="mobile-icon">
+            </a>
+            <p>Get the BIC Mobile App and Sell more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+  </footer>
+  <!-- Footer Bottom -->
+  <footer class="footer-bottom">
+      <!-- Container Start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-12">
+            <!-- Copyright -->
+            <div class="copyright">
+              <p>NCS Copyright © 2019. All Rights Reserved</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <!-- Social Icons -->
+            <ul class="social-media-icons text-right">
+                <li><i class="fab fa-facebook-f"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-github"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Container End -->
+      <!-- To Top -->
+      <div class="top-to">
+        <a id="top" class="" href="#"><i class="fa fa-angle-up"></i></a>
+      </div>
+  </footer>
+  
+     
+      <!-- Bootstrap scripts -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+  
+      <!-- my scripts -->
+      <script src="./scripts/loader.js"></script>
+      <script src="./scripts/dropdown.js"></script>
+      
+      <!-- changle nav color -->
+      <script>
+       var navul = document.getElementById("navlist")
+  
+       $(window).scroll(function(){
+          $(navul).toggleClass('scrolled', $(this).scrollTop() > 5);
+         
+        });
+      </script>
+  
+    </body>
+  </html>

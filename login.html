@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Buy In Campus</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- My Styles -->
+    <link rel="stylesheet" href="./css/login.css">    
+    <link rel="stylesheet" href="./css/main.css" />
+    
+    <!-- plugins -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css" />
+  </head>
+  <body onload="loader()">
+   
+    <!-- Preloader -->
+    <!-- <div id="loading"></div> -->
+
+
+   <!-- NAVBAR -->
+   <nav class="nav">
+    <div class="elmnts">
+      <ul id="navlist">
+        <li>
+          <span class="undln"><a href="index.html">home</a></span>
+        </li>
+       <div class="dropdown">
+        <li class="trigger">
+          <span class="undln">Category</span>
+        </li>
+        <div class="content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+              exercitationem, veniam necessitatibus perferendis, odio consectetur
+              odit aperiam alias explicabo ipsam beatae!
+            </p>
+      </div>
+       </div>
+      <div class="dropdown">
+          <li class="trigger">
+            <span class="undln">Listing</span>
+          </li>
+          <div class="content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                exercitationem, veniam necessitatibus perferendis, odio consectetur
+                odit aperiam alias explicabo ipsam beatae!
+              </p>
+        </div>
+        </div>
+
+        <div class="dropdown">
+            <li class="trigger leftmost">
+              <span class="undln">about us</span>
+            </li>
+            <div class="content">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+                  quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+                  exercitationem, veniam necessitatibus perferendis, odio consectetur
+                  odit aperiam alias explicabo ipsam beatae!
+                </p>
+          </div>
+          </div>
+
+    
+          <!-- <li>
+            <span class="cart"><i class="fal fa-shopping-cart"></i></span>
+            </li> -->
+        
+            <li class="right btn-li">
+              <button  class="btn btn-primary btn-login"><a href="login.html">SIGN IN / SIGN UP</a></button>
+            </li>
+        <li class="btn-li">
+          <button class="btn btn-success btn-add"><i class="far fa-camera-alt"></i>  &nbsp &nbspADD +</button>
+        </li>
+        <div class="dropdown">
+        <li class="trigger">
+      <span class="undln">
+        <img class="flag" src="data:image/png;base64,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"/></span>
+        </li>
+        <div class="content">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              quibusdam minus error omnis, harum incidunt. Magni ea fugiat
+              exercitationem, veniam necessitatibus perferendis, odio consectetur
+              odit aperiam alias explicabo ipsam beatae!
+            </p>
+      </div>
+      </div>
+       
+      </ul>
+
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+
+   <!-- signIn/signUp -->
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+       
+
+
+     <!-- Bootstrap scripts -->
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"
+   ></script>
+   <script
+     src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"
+   ></script>
+
+   <!-- my scripts -->
+   <script src="./scripts/login.js"></script>
+   
+   <script src="./scripts/loader.js"></script>
+   <script src="./scripts/dropdown.js"></script>
+   
+   <!-- changle nav color -->
+   <script>
+    var navul = document.getElementById("navlist")
+
+    $(window).scroll(function(){
+       $(navul).toggleClass('scrolled', $(this).scrollTop() > 5);
+      
+     });
+   </script>
+    
+  </body>
+</html>
