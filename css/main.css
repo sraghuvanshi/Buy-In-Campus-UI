@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Muli|Poppins|Oswald|Patua+One|Roboto+Condensed|Rubik:400,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans+Condensed:300|Muli|Poppins|Oswald|Patua+One|Roboto+Condensed|Rubik:400,800");
 
 * {
   margin: 0%;
@@ -10,7 +10,7 @@
 body {
   overflow-x: hidden;
   /* height: 700vh; */
-  /* background: black; */
+  /* background: #2F2F2F; */
 }
 
 :root {
@@ -178,7 +178,7 @@ div.socialicon i:hover{
   transition: 0.2s ease-in-out;
   color: #fff;
   font-family: "Poppins";
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 1px;
@@ -763,21 +763,26 @@ button.btn-add i {
 .section-3 {
   height: 70vmin;
   margin-top: 10vmin;
-  background-image: var(--grad);
-  cursor: pointer;
+  /* background-image: var(--grad); */
+  background: url("/img/wallpaper.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* cursor: pointer; */
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .section-3 .col-md-12 > h1 {
   padding: 2em 0 0.5em 0;
-  color: #fff;
+  color: crimson;
   font-size: 6vmin;
 }
 
 .section-3 .col-md-12 > p {
   padding: 0.4em 6em 0.4em;
   padding-bottom: 2em;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff;
   font-size: 3vmin;
 }
 
@@ -787,6 +792,13 @@ button.btn-add i {
   border-radius: 3em;
   padding: 2vmin 4.5vmin;
   margin: 1em;
+  transition: background 0.5s;
+}
+
+.section-3 .desktop:hover{
+  background: var(--gradright);
+  color:#fff;
+  cursor: pointer;
 }
 
 .section-3 .desktop > h3 {
@@ -826,9 +838,7 @@ button.btn-add i {
   padding: 0.5em;
 }
 
-.section-4 .card .card-body > a {
-  font-size: 1.5em;
-}
+
 
 .section-4 .carousel-item {
   /* height: 20vh; */
@@ -854,6 +864,11 @@ button.btn-add i {
 .user-img.single {
   display: flex;
   justify-content: center;
+}
+
+.section-4 .card .card-body > a {
+  font-size: 1.5em;
+  color: orangered !important;
 }
 
 /* media for section 3 and 4 */
@@ -1051,7 +1066,11 @@ button.btn-add i {
   height: 55vmin;
   background: url(../img/pexels-photo-452738.jpeg);
   background-position: -25rem -19rem;
-  background-size: 150%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 120%;
   position: relative;
 }
 
@@ -1166,7 +1185,7 @@ button.btn-add i {
 .form-control:focus {
   color: #666;
   box-shadow: none;
-  border: 1px solid #5672f9;
+  border: 1px solid #ff8533;
   background-color: transparent;
 }
 
@@ -1521,12 +1540,12 @@ textarea.form-control {
 .widget.change-password .form-group i,
 .widget.change-email .form-group i {
   color: white;
-  background: #5672f9;
+  background: #ff4b2c;
   font-size: 25px;
   height: 50px;
-  width: 50px;
+  width: 60px;
   line-height: 50px;
-  margin-right: 15px;
+  margin-right: 25px;
   border-radius: 100%;
 }
 
@@ -1799,4 +1818,182 @@ img.review-img {
   box-shadow: 0 3.5px 7px rgba(0, 0, 0, 0.25), 0 2.5px 2.5px rgba(0, 0, 0, 0.22);
   color: #fff;
   background: #ff416a;
+}
+
+
+/* About */
+
+/* our team */
+.ourTeam-wrapper{
+  display: block;
+  width: 100%;
+  /* height: 100vh; */
+  /* border: 2px solid black; */
+  margin-top: 120px;
+}
+
+.ourTeam-wrapper .team-wrap{
+  background: linear-gradient(to bottom,#F04936,#F58A44);
+
+}
+
+.ourTeam-wrapper .team-about {
+  width: 100%;
+  height: 30vh;
+}
+
+.ourTeam-wrapper .team-image {
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+  background: #fff;
+
+  /* border: 2px solid pink; */
+}
+
+.ourTeam-wrapper .team-image img {
+  height: 30vh;
+  width: 100%;
+}
+
+
+.ourTeam-wrapper .ruler{
+width: 100%;
+height: 1px;
+background-color: #666;
+margin-bottom: 35px;
+}
+
+.ourTeam-wrapper .header h2 {
+  color: #ff4b2c;
+  font-family: "Open Sans Condensed";
+  font-size: 40px;
+}
+
+.ourTeam-wrapper .team-about {
+  background: transparent;
+}
+
+.ourTeam-wrapper .team-about i{
+font-size: 40px;
+color:#fff;
+transform: scaleX(-1);
+margin-top: 70px;
+}
+
+.ourTeam-wrapper .team-about h5 {
+  font-family: "Open Sans Condensed";
+  color: #fff;
+  font-size: 35px;
+}
+
+.ourTeam-wrapper .team-about p {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Open Sans Condensed";
+  padding: 0;
+  margin: 0;
+}
+
+/* .ourTeam-wrapper .row1 {
+  background:  #ff674d
+  ;
+}
+.ourTeam-wrapper .row2 {
+  background:  #ff9380;
+}
+.ourTeam-wrapper .row3 {
+  background:  #ffbeb3;
+} */
+
+.ourTeam-wrapper .row2 i{
+  transform: scaleX(1);
+}
+
+.ourTeam-wrapper .row2{
+  text-align: right;
+}
+
+
+/* section1  */
+
+.section-1 {
+  padding: 20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray video{
+  opacity: 0.8;
+  width: 120%;
+  border-radius: 0.2em;x`
+}
+
+/* .section-1 .row .col-md-6:last-child {
+  position: relative;
+} */
+
+.section-1 .row .col-md-6 .panel{
+  position: absolute;
+  top: 7vmin;
+  left: -9vmin;
+  background: white;
+  border-radius: 3px;
+  text-align:left;
+  padding: 13vmin 5vmin 20vmin 10vmin;
+  box-shadow: 0px 25px 42px rgba(0, 0, 0,0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+} 
+
+.section-1 .row .col-md-6 .panel h1{
+  font-weight: bold;
+  padding: 0.4em 0;
+  font-size: 2em;
+  font-family: "Poppins";
+  color:#4669FE;
+}
+
+.section-1 .row .col-md-6 .panel p{
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* post new ad */
+.post{
+  margin-top: 100px;
+}
+
+.choose-file {
+  display: inline-flex;
+}
+
+.choose-file i {
+  color: black;
+}
+
+.widget.personal-info button, .widget.change-password button, .widget.change-email button {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #ff4b2c;
+  border: 1px solid #ff5252;
+}
+
+.btn-transparent:hover {
+  background: #ff4b2c;
+  color: #fff;
+}
+
+.post .widget {
+  /* box-shadow: var(--shadow); */
+  border: .5px solid #ff8533;
+  border-radius: 10px;
+  
+} 
+
+h3.post-heading {
+  font-weight: bold;
 }
