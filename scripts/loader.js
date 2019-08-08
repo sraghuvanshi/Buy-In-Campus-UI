@@ -1,4 +1,5 @@
 var preloader = document.getElementById("loading");
-function loader() {
+
+setInterval(function loader() {
   preloader.style.display = "none";
-}
+}, 5000);

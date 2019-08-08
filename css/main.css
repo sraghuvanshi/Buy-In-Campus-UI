@@ -51,14 +51,14 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: rgba(0, 0, 0, 0.22);
   opacity: 0.3;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 100%, 35%);
+  background: rgba(0, 0, 0, 0.42)
 }
 
 .fullNav {
